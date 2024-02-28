@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+:root{
+  --primary-hue: 36;
+  --gray-hue: 40;
+
+  --color-primary: hsl(var(--primary-hue), 100%, 50%);
+  --color-primary-variant: hsl(var(--primary-hue), 100%, 65%);
+  --color-secondary: hsl(50, 100%, 50%);
+
+  --color-gray-100: hsl(var(--gray-hue), 100%, 90%);
+  --color-gray-200: hsl(var(--gray-hue), 85%, 80%);
+  --color-gray-300: hsl(var(--gray-hue), 65%, 68%);
+  --color-gray-400: hsl(var(--gray-hue), 32%, 50%);
+  --color-gray-500: hsl(var(--gray-hue), 12%, 18%);
+  --color-gray-600: hsl(var(--gray-hue), 5%, 12%);
+  
+
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+
+  --transition: all 500ms ease;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-gray-100);
+  line-height: 1.7;
+  background: var(--color-gray-600) url('../../public/images/bg_texture.png');
+}
+
+.container{
+  width: var(--container-width-lg);
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+  line-height: 1.2;
+  color: var(--color-gray-100);
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+a{
+  color: var(--color-gray-100);
+}
+
+img{
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.btn{
+  color: var(--color-gray-100);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.9rem 2rem;
+  background-color: var(--color-primary);
+  border-radius: 1.5rem;
+  transition: var(--transition);
+}
+
+.btn:hover{
+  background-color: var(--color-secondary);
+  color: var(--color-gray-600);
+}
+
+.btn.lg{
+  padding: 1.2rem 3rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+}
+
+.btn.sm{
+  padding: 0.4rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+.btn.sm:hover{
+  background-color: var(--color-gray-100);
+}
