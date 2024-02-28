@@ -58,3 +58,38 @@ export const services = [
         href: '/servicios/instalaciones-de-energia-solar'
     }
 ]
+
+
+export const whyUs = [
+    {
+        id: 1,
+        title: "Compromiso",
+        description: "Nuestro compromiso con la calidad y la innovación nos permite ofrecer soluciones de vanguardia a medida que la tecnología avanza."
+    },
+    {
+        id: 2,
+        title: "Experiencia",
+        description: "Tenemos un personal altamente capacitado y con amplia experiencia en el rubro."
+    },
+    {
+        id: 3,
+        title: "Calidad",
+        description: "La calidad de nuestros servicios es una de nuestras prioridades. Nos esforzamos por ofrecer soluciones de calidad que cumplan con las expectativas de nuestros clientes."
+    },
+    {
+        id: 4,
+        title: "Innovación",
+        description: "Innovar se ha convertido en una necesidad para mantenernos a la vanguardia. Nuestra constante búsqueda de nuevas tecnologías nos permite ofrecer soluciones innovadoras a nuestros clientes.",
+    },
+    {
+        id: 5,
+        title: "Atención al Cliente",
+        description: "El tiempo y la dedicación que brindamos a cada cliente es lo que nos diferencia. Nos esforzamos por brindar una atención personalizada y de calidad a cada uno de nuestros clientes."
+    },
+    {
+        id: 6,
+        title: "Soluciones a Medida",
+        description: "Dedicar tiempo a entender las necesidades de nuestros clientes nos permite ofrecer soluciones a medida que se adapten a sus necesidades."
+    }
+    
+]

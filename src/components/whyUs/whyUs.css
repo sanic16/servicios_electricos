@@ -1,0 +1,25 @@
+.whyUs__description{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin: 3rem 0 5rem;
+    align-items: center;
+}
+
+.whyUs__image{
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 2px solid  hsla(var(--primary-hue), 100%, 50%, 0.3);
+    transition: var(--transition);
+}
+
+.whyUs__wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 250px));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card.whyUs__item{
+    padding: 2rem 1rem;
+}

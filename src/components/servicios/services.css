@@ -25,11 +25,10 @@
     .services__wrapper{
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .services{
-        margin-top: 0;
-    }   
+    
 }
+
+   
 
 @media screen and (max-width: 600px){
     .services__wrapper{

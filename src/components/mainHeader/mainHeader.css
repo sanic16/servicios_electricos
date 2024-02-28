@@ -2,7 +2,7 @@
     width: 100vw;
     height: calc(100vh - 3rem);
     display: grid;
-    place-items: center;
+    align-items: center;
     margin-top: 3rem;
 }
 
@@ -97,7 +97,7 @@
 
     .main__header-image,
     .main__header-circle{
-        opacity: 0.5;  
+        opacity: 0.4;  
     }
 
     .main__header-circle{
@@ -121,6 +121,38 @@
 }
 
 @media screen and (max-width: 450px){
+    .main__header-circle{
+        width: 18rem;
+    }
+}
+
+@media screen and (max-height: 700px) and (max-width: 600px){
+    .main__header{
+        padding: 8rem 0 0;
+    }
+
+    .main__header-left p{
+        margin: 2rem 0 3rem;
+    }
+}
+
+@media screen and (max-height: 600px) and (max-width: 600px){
+    .main__header{
+        padding: 6rem 0 0;
+    }
+
+    .main__header-left p{
+        margin: 2rem 0 2rem;
+    }
+}
+
+@media screen and (max-height: 400px) and (max-width: 600px){
+    .main__header{
+        height: fit-content;
+    }
+    .main__header-right{
+        width: 40%;
+    }
     .main__header-circle{
         width: 18rem;
     }
