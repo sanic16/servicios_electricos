@@ -68,6 +68,9 @@ nav{
 }
 
 @media screen and (max-width: 1024px){
+    .nav__container{
+        z-index: 200;
+    }
     .nav__toggle-btn{
         display: inline-block;
         background-color: transparent;
