@@ -1,3 +1,4 @@
+import Boletin from '@/components/boletin/Boletin'
 import MainHeader from '@/components/mainHeader/MainHeader'
 import Services from '@/components/servicios/Services'
 import WhyUs from '@/components/whyUs/WhyUs'
@@ -9,6 +10,7 @@ export default function HomePage() {
       <MainHeader />
       <Services />
       <WhyUs />
+      <Boletin />
     </>
   )
 }
