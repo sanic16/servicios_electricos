@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://s3.amazonaws.com/websites.juliosanic.tech/electricidad/alexander-schimmeck-k_-KlaENC-Q-unsplash.jpg',
+        url: 'https://s3.us-east-2.amazonaws.com/static.juliosanic.tech/electricidad/alexander-schimmeck-k_-KlaENC-Q-unsplash.jpg',
         height: 426,
         width: 640
       }
