@@ -34,7 +34,7 @@ const WhyUs = () => {
                 whyUs.map(item => (
                   <Card className='whyUs__item' key={item.id}>
                     <span>
-                      { <MdElectricalServices /> }
+                      { <item.icon /> }
                     </span>
                     <h4> { item.title }</h4>
                     

@@ -35,6 +35,7 @@ nav{
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
+    line-height: 1;
 }
 
 .nav__links{
@@ -64,7 +65,7 @@ nav{
 }
 
 .nav__links a:hover{
-    color: var(--color-gray-300);
+   color: var(--color-gray-600);
 }
 
 @media screen and (max-width: 1024px){

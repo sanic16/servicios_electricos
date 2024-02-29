@@ -59,37 +59,74 @@ export const services = [
     }
 ]
 
+import { FaCheckCircle, FaCogs, FaFacebook, FaHeadset, FaInstagram, FaLightbulb, FaLinkedin, FaThumbsUp, FaTwitter } from 'react-icons/fa'
+import { FaStar } from 'react-icons/fa'
+
 
 export const whyUs = [
     {
         id: 1,
         title: "Compromiso",
-        description: "Nuestro compromiso con la calidad y la innovación nos permite ofrecer soluciones de vanguardia a medida que la tecnología avanza."
+        description: "Nuestro compromiso con la calidad y la innovación nos permite ofrecer soluciones de vanguardia a medida que la tecnología avanza.",
+        icon: FaCheckCircle
     },
     {
         id: 2,
         title: "Experiencia",
-        description: "Tenemos un personal altamente capacitado y con amplia experiencia en el rubro."
+        description: "Tenemos un personal altamente capacitado y con amplia experiencia en el rubro.",
+        icon: FaStar
     },
     {
         id: 3,
         title: "Calidad",
-        description: "La calidad de nuestros servicios es una de nuestras prioridades. Nos esforzamos por ofrecer soluciones de calidad que cumplan con las expectativas de nuestros clientes."
+        description: "La calidad de nuestros servicios es una de nuestras prioridades. Nos esforzamos por ofrecer soluciones de calidad que cumplan con las expectativas de nuestros clientes.",
+        icon: FaThumbsUp
     },
     {
         id: 4,
         title: "Innovación",
         description: "Innovar se ha convertido en una necesidad para mantenernos a la vanguardia. Nuestra constante búsqueda de nuevas tecnologías nos permite ofrecer soluciones innovadoras a nuestros clientes.",
+        icon: FaLightbulb
     },
     {
         id: 5,
         title: "Atención al Cliente",
-        description: "El tiempo y la dedicación que brindamos a cada cliente es lo que nos diferencia. Nos esforzamos por brindar una atención personalizada y de calidad a cada uno de nuestros clientes."
+        description: "El tiempo y la dedicación que brindamos a cada cliente es lo que nos diferencia. Nos esforzamos por brindar una atención personalizada y de calidad a cada uno de nuestros clientes.",
+        icon: FaHeadset
     },
     {
         id: 6,
         title: "Soluciones a Medida",
-        description: "Dedicar tiempo a entender las necesidades de nuestros clientes nos permite ofrecer soluciones a medida que se adapten a sus necesidades."
-    }
-    
+        description: "Dedicar tiempo a entender las necesidades de nuestros clientes nos permite ofrecer soluciones a medida que se adapten a sus necesidades.",
+        icon: FaCogs
+    }   
 ]
+
+export const footer_socials = [
+    {
+        id: 1,
+        name: "Facebook",
+        href: "https://www.facebook.com",
+        icon: FaFacebook
+    },
+    {
+        id: 2,
+        name: "Instagram",
+        href: "https://www.instagram.com",
+        icon: FaInstagram,
+    },
+    {
+        id: 3,
+        name: "Twitter",
+        href: "https://www.twitter.com",
+        icon: FaTwitter, 
+    },
+    {
+        id: 4,
+        name: "LinkedIn",
+        href: "https://www.linkedin.com",
+        icon: FaLinkedin
+    }
+]
+
+export const footer_links = links.filter(link => link.name !== "Inicio")

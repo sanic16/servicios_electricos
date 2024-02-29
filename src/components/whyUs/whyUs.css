@@ -15,11 +15,49 @@
 
 .whyUs__wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min-content, 250px));
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 200px));
     gap: 2rem;
     justify-content: center;
 }
 
 .card.whyUs__item{
+    border-radius: 1rem;
     padding: 2rem 1rem;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.card.whyUs__item span{
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+@media screen and (max-width: 900px){
+    .whyUs__description{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .whyUs__description p{
+        text-align: center;
+    }
+
+    .whyUs__image{
+        max-width: 30%;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .card.whyUs__item{
+        padding: 2rem 0.5rem;
+    }
+
+    .card.whyUs__item h4{
+        font-size: 0.9rem;
+    }
 }
