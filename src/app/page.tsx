@@ -15,6 +15,13 @@ export const metadata: Metadata = {
     description: 'Servicios de electricidad para tu hogar o negocio',
     url: 'https://servicios-electricos.juliosanic.tech',
     type: 'website',
+    images: [
+      {
+        url: 'https://s3.amazonaws.com/websites.juliosanic.tech/electricidad/alexander-schimmeck-k_-KlaENC-Q-unsplash.jpg',
+        height: 426,
+        width: 640
+      }
+    ]
    
   }
 } 
