@@ -1,0 +1,14 @@
+.about section{
+    margin-top: 5rem;
+}
+.about h1{
+    background: linear-gradient(90deg, var(--color-primary), white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+}
+
+.about p{
+    margin-bottom: 1rem;
+}

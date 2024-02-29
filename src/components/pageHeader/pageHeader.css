@@ -1,0 +1,38 @@
+.header{
+    margin-top: 5rem;
+    height: 15rem;
+    border-bottom: 2px solid var(--color-gray-400);
+}
+
+.header__container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.header__container-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.header__container-bg img{
+    height: 100%;
+    object-position: center;
+    opacity: 0.5;
+}
+
+.header__content{
+    position: relative;
+    width: 40%;
+    text-align: center;
+    color: var(--color-gray-100);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__content h2{
+    text-transform: uppercase;
+}

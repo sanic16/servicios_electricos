@@ -39,33 +39,48 @@ nav{
 }
 
 .nav__links{
-    display: flex;
-    gap: 3.5rem;
-    align-items: center;
+    width: 40rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
 }
 
 .nav__links a{
+    display: grid;
+    text-align: center;
+    padding-block: .6rem;
     transition: var(--transition);
+
 }
 
-.active-nav{
-    position: relative;
-}
-
-.active-nav::after{
+.nav__links a::before,
+.nav__links a::after{
     content: '';
-    display: block;
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 0;
+    height: 1px;
     background-color: var(--color-primary);
-    position: absolute;
-    left: calc(50% - 0.6rem);
-    top: 2.5rem;
-    transform: rotate(45deg);
+    transition: var(--transition);
+    transition: width .3s cubic-bezier(.55, 0, .98, .54), background-color .5s .3s;
+}
+
+.nav__links a::after{
+    justify-self: end;
+}
+
+.nav__links a:hover::before,
+.nav__links a:hover::after{
+    width: 100%;
+    background-color: var(--color-primary);
+}
+
+
+.nav__links .active-nav{
+    background-color: var(--color-gray-600);
+    color: var(--color-primary);
 }
 
 .nav__links a:hover{
-   color: var(--color-gray-600);
+   color: var(--color-primary);
+   background-color: var(--color-gray-600);
 }
 
 @media screen and (max-width: 1024px){
@@ -82,6 +97,8 @@ nav{
     }
 
     .nav__links{
+        display: flex;
+        width: auto;
         position: absolute;
         top: 100%;
         right: 0;
@@ -141,6 +158,11 @@ nav{
         padding: 1rem 5rem;
     }
 
+    .nav__links a::before,
+    .nav__links a::after{
+        display: none;
+    }
+
     .show__nav{
         display: flexbox;
     }
@@ -149,8 +171,5 @@ nav{
         display: none;
     }
 
-    .active-nav,
-    .active-nav::after{
-        display: none;
-    }
+    
 }

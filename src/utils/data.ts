@@ -8,16 +8,12 @@ export const links = [
         path : "/nosotros"
     },
     {
-        name : "Galería",
-        path : "/galeria"
+        name : "Proyectos",
+        path : "/proyectos"
     },
     {
-        name : "Planes",
-        path : "/planes"
-    },
-    {
-        name : "Entrenadores",
-        path : "/entrenadores"
+        name : "Servicios",
+        path : "/servicios"
     },
     {
         name : "Contacto",
